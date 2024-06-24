@@ -1,0 +1,95 @@
+/* .lista-drop-start{
+    border-radius: 12px;
+    margin: 8rem auto;
+    width: 300px;
+    height: 320px;
+    background: #ffffff;
+    padding: 2rem;
+    transition: 0.2s all;
+    animation: slide .3s alternate;
+    overflow-y: scroll;
+    z-index: 6;
+    overflow: hidden;
+} */
+
+
+.lista-drop-start::-webkit-scrollbar{
+  background: none;
+  width: 5px;
+}
+
+.lista-drop-start::-webkit-scrollbar-thumb{
+  background: #0083ee;
+}
+/*Cards*/
+.lista-veiculos {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-top: 6px;
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* .lista-veiculos::-webkit-scrollbar{
+  width: 10px;
+} */
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c2c2c23b;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.veiculos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.veiculo-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.veiculo-card:hover {
+  transform: translateY(-5px);
+}
+
+.veiculo-header {
+  background-color: #007bff;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px;
+}
+
+.veiculo-header h4 {
+  margin: 0;
+}
+
+.veiculo-body {
+  padding: 15px;
+}
+
+.veiculo-body p {
+  margin: 5px 0;
+}

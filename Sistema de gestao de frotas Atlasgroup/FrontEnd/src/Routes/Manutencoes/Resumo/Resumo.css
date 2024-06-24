@@ -1,0 +1,147 @@
+
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.summary-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.card-atividades{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* .controll-text-ativ{
+  background: red;
+  width: fi;
+} */
+
+
+.card-control-chart{
+  display: grid;
+  margin: auto;
+  width: 97%;
+  grid-template-columns: 0.70fr 0.50fr;
+  height: auto;
+  gap: 50px;
+}
+
+.statistics h2{
+  font-size: 1.50rem ;
+}
+
+canvas{
+  width: 100% !important;
+  height: 270px !important;
+}
+
+
+/*Grafico*/
+
+
+
+
+/*Alertas*/
+ /* .lista-alertas {
+    margin-top: 20px;
+  }
+  
+  .lista-alertas h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .lista-alertas ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lista-alertas li {
+    background-color: rgba(255, 187, 0, 0.034);
+    border-right:  5px solid rgb(255, 153, 0);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  .lista-alertas li strong {
+    font-weight: bold;
+  }
+  
+  .lista-alertas li p {
+    margin: 5px 0;
+  }  */
+
+  .alertas-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .alerta-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .alerta-descricao {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .alerta-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .alerta-detail {
+    margin-right: 20px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .criar-ordem-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .criar-ordem-btn:hover {
+    background-color: #0056b3;
+  }
+  
+.no-alertas {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.lista-alertas{
+  height: 300px;
+  padding: 15px;
+  overflow: scroll;
+}
+

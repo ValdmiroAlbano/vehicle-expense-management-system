@@ -1,0 +1,40 @@
+.CardPefil{
+    background: rgb(255, 255, 255);
+    z-index: 10;
+    right: 0;
+    position: fixed;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    border: 1px solid #c2c2c27c;
+    border-radius: 8px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    animation: bounce 1s alternate infinite; 
+}
+
+
+.username{
+    border-bottom:  1px solid #c2c2c27c;
+    padding-bottom: 6px;
+}
+
+.cardperfil{
+    display: flex;
+    gap: 15px;
+}
+
+.card-user-text{
+    line-height: 1px;
+}
+
+.card-user-text label{
+    font-size: 13px;
+    color: #c2c2c2;
+}
+
+.CardPefil button{
+    width: 250px !important;
+}

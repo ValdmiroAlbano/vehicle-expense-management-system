@@ -1,0 +1,279 @@
+.veiculo-drop {
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  transition: 62s;
+  color: var(--background-sidebar);
+}
+
+h3{
+text-align: center !important;
+}
+
+.veiculo-drop-start {
+  border-radius: 8px;
+  margin: 2rem auto;
+  width: 400px;
+  height: 550px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  transition: 0.2s all;
+  animation: slide 0.3s alternate;
+  z-index: 6;
+  padding: 1rem 1.5rem 1rem 2rem;
+  overflow-y: scroll;
+}
+
+.usuario-card-group input[type="number"]{
+  width: 147px;
+}
+
+.usuario-card-group input[type="date"]{
+  width: 64% !important;
+}
+
+.veiculo-group-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 10px;
+  margin-top: 15px;
+
+}
+
+.veiculo-group-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 15px;
+}
+.veiculo-icons-close{
+  font-size: 24px !important;
+  text-align: right;
+  cursor: pointer;
+}
+
+.veiculo-drop-start::-webkit-scrollbar{
+  width: 10px;
+}
+
+.veiculo-drop-start::-webkit-scrollbar-thumb{
+  background: var(--background-button);
+  border-radius: 50px;
+}
+
+/*estilização do documentos*/
+
+
+
+.veiculo-card-group select:focus{
+  transition: .5s all;
+
+  transition-property: all;
+  border: 2px solid #2798FF;
+}
+
+
+.veiculo-group-docs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+  border-radius: 8px;
+
+  margin-bottom: 2rem;
+
+}
+
+.docs-preview{
+  width: 180px;
+  height: 120px;
+  border-radius: 15px;
+  background: #F3F3F3;
+  border: 2px solid var(--background-button);
+  border-style: dashed;
+}
+
+.docs-up{
+  background: #F3F3F3;
+  color: #6B7280;
+  font-size: 12px;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+
+}
+
+.docs-upload span{
+  font-size: 12px;
+}
+
+.veiculo-card-group-status{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.veiculo-card-group-status label{
+  font-size: 14px;
+}
+
+.veiculo-card-group-status{
+  display: flex;
+  align-items: center;
+}
+
+.veiculo-card-group input{
+  height: 25px !important;
+}
+
+
+
+
+
+.veiculo-group-select input{
+  width: 50% !important;
+}
+
+
+.veiculo-card-group select{
+  padding: 0.60rem;
+  width: 100% ;
+  height: 42px;
+  border: 1px solid red;
+
+
+  color: #000000;
+  font-size: 13px;
+  outline:  1px solid rgba(0, 0, 0, 0.116);
+  transition: .5s ease-in-out;
+  border-radius: 5px;
+}
+
+.veiculo-card-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.veiculo-buttons button {
+position: relative;
+background-color: var(--background-button);
+border: none;
+font-size: var(--text-button);
+color: #ffffff;
+height: 40px;
+border-radius: 8px;
+font-size: 15px;
+width: 100% !important;
+text-align: center;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.1s;
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+font-weight: 0;
+}
+
+.veiculo-buttons button:after {
+content: "";
+background: #90aeee;
+display: block;
+position: absolute;
+padding-top: 300%;
+padding-left: 350%;
+margin-left: -20px!important;
+margin-top: -120%;
+opacity: 0;
+transition: all 0.8s
+}
+
+.veiculo-buttons button:active:after {
+padding: 0;
+margin: 0;
+opacity: 1;
+transition: 0s
+}
+
+.labelError {
+  color: #e00909 !important;
+}
+
+@keyframes slide {
+  from {
+    transition: 0.2s all;
+    transform: translate(100px);
+  }
+}
+
+.veiculo-card-name {
+  text-align: center;
+  justify-content: center;
+}
+
+.veiculo-card-name h3 {
+  font-size: 26px;
+}
+
+
+
+
+/*INPUT*/
+
+
+.veiculo-card-group{
+  width: 100%;
+}
+
+
+.veiculo-card-group select{
+  width: 100%;
+}
+
+.usuario-card-group input[type="date"]{
+  padding: 1.20rem;
+  width: 120px !important;
+  border: 2px solid transparent;
+}
+
+.veiculo-card-group select,
+.veiculo-card-group input{
+  padding: 0.60rem;
+  width: 100%;
+  border: 0;
+
+  background: #fafafa;
+  color: #000000;
+  font-size: 12px;
+  outline:  0;
+  transition: .5s ease-in-out;
+  border-radius: 5px;
+}
+
+
+.veiculo-card-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.veiculo-buttons{
+  display: flex;
+  gap: 20px;
+  width: 185px;
+  float: right;
+}
+
+

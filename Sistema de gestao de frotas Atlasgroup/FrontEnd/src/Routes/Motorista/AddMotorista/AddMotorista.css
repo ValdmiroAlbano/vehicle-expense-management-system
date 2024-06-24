@@ -1,0 +1,197 @@
+/* Estilos gerais da página */
+
+.motorista-drop::-webkit-scrollbar{
+  background: none;
+  width: 5px;
+}
+
+#motorista-number{
+  width: 84%;
+}
+
+.motorista-drop::-webkit-scrollbar-thumb{
+  background: #0083ee;
+}
+
+.link-acess{
+  margin-top: 4px;
+}
+
+.motorista-drop {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  z-index: 20;
+  top: 0;
+  color: var(--background-sidebar);
+
+  overflow-y: auto;
+  transition: .2s all;
+
+}
+
+.motorista-icons-close {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.motorista-card-name h3 {
+  font-size: 24px;
+}
+
+/*Motorista drop-start*/
+
+.motorista-drop-start {
+  border-radius: 8px;
+  margin: 5rem auto;
+  width: 340px;
+  height: 430px;
+  background: #ffffff;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: 0.2s all;
+  animation: slide .3s alternate;
+  overflow-y: auto;
+  z-index: 6;
+  overflow: hidden;
+}
+
+/* Estilos para os inputs */
+
+.motorista-group-input {
+  display: flex;
+  gap: 10px;
+  min-height: 80px;
+}
+
+.motorista-group-input span{
+  font-size: 12px;
+ font-weight: bold;
+ line-height: 30px;
+}
+
+.motorista-group-input input {
+  width: 130px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 0;
+
+  background: #F3F3F3;
+  color: #000000;
+  font-size: 12px;
+}
+
+.motorista-group-input input{
+  background-image: url(../../../assets/input-icon/input-name.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  padding-left: 35px;
+}
+
+.motorista-group-input input:focus{
+  transition: .5s all;
+  border: 2px solid rgba(39, 152, 255, 0.5) !important;
+}
+
+.motorista-docs-input {
+  display: block;
+}
+
+
+/*Link Acess*/
+
+.link-acess{
+  display: flex;
+  height: 10px;
+  font-size: 10px !important;
+  margin-top: 0.5rem; 
+}
+
+.link-acess i{
+  font-size: 12px !important;
+  max-width: 0 !important;
+  padding: -3px !important;
+}
+
+
+.motorista-docs-input span {
+ font-size: 12px;
+ font-weight: bold;
+ line-height: 40px;
+}
+
+/* Estilos para os botões */
+
+.motorista-buttons{
+  display: block;
+  margin-top: 25px;
+}
+
+
+.motorista-buttons button {
+  position: relative;
+  background-color: var(--background-button);
+  border: none;
+  font-size: var(--text-button);
+  color: #ffffff;
+  height: 42px;
+  border-radius: 5px;
+  width: 100% !important;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.1s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.motorista-buttons button:after {
+  content: "";
+  background: #90aeee;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.motorista-buttons button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+.labelError {
+  color: rgb(224, 9, 9);
+}
+
+/* Animação */
+
+@keyframes slide {
+  from {
+    transition: 0.2s all;
+    transform: translate(100px);
+  }
+}
+
+/* Adicione outros estilos específicos conforme necessário */
+
+/*PHOTO*/
+
+.photo{
+  background: #61b5fa;
+  width: 90px;
+  height: 0px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}

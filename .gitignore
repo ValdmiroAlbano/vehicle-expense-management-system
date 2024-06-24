@@ -31,3 +31,92 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+flutter_export_environment.sh
+.pub-cache/
+.pub/
+/pubspec.lock
+
+# Folders created by the IDE
+.idea/
+.vscode/
+project.iml
+
+# macOS files
+.DS_Store
+
+# Windows folder
+Thumbs.db
+
+# Android related
+android/local.properties
+android/key.properties
+
+
+# iOS related
+ios/Flutter/.last_build_id
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/
+ios/Runner.xcodeproj/xcuserdata/
+xcuserdata/
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Production build
+build/
+
+# Miscellaneous
+.DS_Store
+*.pem
+
+# Environment variables
+.env
+
+# IDEs
+.idea/
+.vscode/
+
+# Local development
+.eslintcache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+
+# Miscellaneous
+.DS_Store
+*.pem
+
+# Environment variables
+.env
+
+# IDEs
+.idea/
+.vscode/
+
+# Local development
+.eslintcache

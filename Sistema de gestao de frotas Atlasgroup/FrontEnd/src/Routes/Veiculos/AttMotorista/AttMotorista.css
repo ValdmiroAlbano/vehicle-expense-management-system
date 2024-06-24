@@ -1,0 +1,92 @@
+/* AttMotorista.css */
+
+/* Estilos para o modal de atribuição de motorista */
+.veiculo-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.veiculo-drop-start-atribuir {
+    border-radius: 8px;
+    margin: 5rem auto;
+    width: 340px;
+    height: 350px;
+    background: #ffffff;
+    padding: 1rem 2rem 1rem 2rem;
+    transition: 0.2s all;
+    animation: slide .3s alternate;
+    overflow: auto;
+    z-index: 6;
+    
+}
+
+.veiculo-drop-start-atribuir::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  .veiculo-drop-start-atribuir::-webkit-scrollbar-thumb{
+        background: var(--background-button);
+        border-radius: 50px; 
+  }
+
+.notif-text-att {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.notif-text-att h1 {
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+}
+
+.notif-pesquisar input {
+    width: 100% !important; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.notif-user-card {
+    display: flex; /* Define o layout como flexível */
+    justify-content: space-between; /* Alinha os itens de forma igual, permitindo que o botão fique à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+    border: 1px solid #c2c2c2; /* Adicione uma borda para melhorar a aparência */
+    margin-bottom: 10px; /* Adicione margem inferior para separar os cards */
+    padding: 10px; /* Adicione algum preenchimento para espaçamento interno */
+    border-radius: 5px;
+}
+
+.card-header {
+    font-weight: bold; /* Adicione negrito ao nome do motorista */
+}
+
+.card-footer button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remova a borda do botão */
+    height: 35px;
+    border-radius: 4px;
+    padding: 5px 10px; /* Adicione algum preenchimento ao botão */
+    cursor: pointer; /* Altere o cursor para indicar que o botão é clicável */
+}
+
+.card-footer button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}

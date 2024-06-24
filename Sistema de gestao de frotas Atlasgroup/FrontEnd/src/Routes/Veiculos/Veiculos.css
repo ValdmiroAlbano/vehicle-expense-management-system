@@ -1,0 +1,36 @@
+
+tbody td{
+    padding: 0.20rem;
+    text-align: left;
+}
+
+#doc{
+    padding-left: 3rem;
+}
+
+#man{
+    padding-left: 1.53rem;
+}
+
+.no-users {
+    position: relative;
+    text-align: center; 
+    color: rgb(63, 56, 56); 
+    font-size: 17px;
+    margin-top: 10rem;
+}
+
+#crud{
+    text-align: center;
+    background: var(--background-button);
+    color: #fff;
+    font-size: 20px !important;
+    padding: 6px;
+    border-radius: 4px;
+    gap: 10px;
+    margin: 2px;
+}
+
+#crud:nth-child(2){
+    background: red;
+}

@@ -1,0 +1,139 @@
+.add-order-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+}
+
+.usuario-card-group-aux {
+  display: flex;
+  flex-direction: row;
+}
+
+.usuario-card-group-aux select {
+  margin-right: 10px; /* Espaçamento entre os selects */
+}
+
+.usuario-card-group-date-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.usuario-card-group-date{
+  font-size: 12px;
+}
+
+.usuario-card-group-date input{
+  width: 130px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: 2px solid transparent;
+  border: 0;
+
+  background: #Fcfcfc;;
+  color: #000000;
+  font-size: 12px;
+  margin-bottom: 13px;
+}
+
+.usuario-card-group-date input:focus{
+  transition: .5s all;
+  outline: 2px solid #2798FF;
+}
+
+
+
+.form-group label{
+  font-size: 14px;
+}
+.modal-content {
+  background-color: #fff;
+  width: 360px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem 2rem 2rem;
+  overflow: hidden;
+  transition: 0.2s all;
+  animation: slide 0.3s alternate;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-body .form-group {
+  margin-bottom: 10px;
+}
+
+.modal-body label {
+  display: block;
+  font-weight: bold;
+}
+
+
+.vehicle-inputt{
+  background-image: url(../../../../assets/cal1.png) !important;
+  background-repeat: no-repeat;
+  background-position: 15px ;
+  padding-left: 47px;
+  border: 2px solid transparent ;
+}
+
+.vehicle-inputt:focus{
+  color: #2798FF;
+  background-image: url(../../../../assets/cal2.png) !important;
+}
+
+
+
+textarea{
+  border: 0;
+  background: #Fcfcfc;
+  outline: 2px solid #ffffff00;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 12px;
+  width: 94%;
+}
+
+#vehicle, #dataAbertura{
+  background-image: none;
+  background-repeat: no-repeat;
+}
+
+#dataAbertura{
+  padding-left: 10px;
+  width: 96%;
+}
+
+
+textarea:focus{
+  border: 0;
+  outline: 2px solid #2798FF;
+}
+
+
+.modal-footer {
+  text-align: right;
+}
+
+
+.modal-footer button:hover {
+  background-color: #0056b3;
+}
+

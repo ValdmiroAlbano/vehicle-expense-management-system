@@ -1,0 +1,56 @@
+
+  .motorista-Edite-card-name h3 {
+    font-size: 26px;
+  }
+
+  .edite-card-motorista{
+    background: red !important;
+  }
+  
+  
+ 
+ 
+  /* Estilos para os inputs */
+  
+  .motorista-Edite-group-input {
+    display: flex;
+    gap: 10px;
+    min-height: 80px;
+  }
+  
+  .motorista-Edite-group-input input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  /* Estilos para os botões */
+  
+  .motorista-Edite-buttons button {
+    font: inherit;
+    width: fit-content;
+  }
+  
+  #motorista-Edite-btn-mot {
+    background: #0083ee;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .labelError-Edite {
+    color: rgb(224, 9, 9);
+  }
+  
+  /* Animação */
+  
+  @keyframes slide {
+    from {
+      transition: 0.2s all;
+      transform: translate(100px);
+    }
+  }
+  
+  /* Adicione outros estilos específicos conforme necessário */
+  

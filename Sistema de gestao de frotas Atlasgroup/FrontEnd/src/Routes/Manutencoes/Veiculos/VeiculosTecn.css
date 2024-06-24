@@ -1,0 +1,42 @@
+.vehicle-grid{
+  display: grid;
+  grid-template-columns: 1fr 0.70fr;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.vehicle-list{
+  padding: 1rem;
+}
+
+.vehicle-tracking-container{
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: left;
+    transition: all .2s;
+    height: 400px;
+    overflow: hidden;
+    background: #e6e6e607;
+    border: 1px solid #ffffff;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
+    border: 1px solid #0482d61a;
+}
+
+.vehicle-tracking-container::-webkit-scrollbar{
+  width: 10px;
+}
+
+.vehicle-tracking-container::-webkit-scrollbar-thumb{
+  background: var(--background-button);
+  border-radius: 50px;
+}
+
+.vehicle-tracking-container:hover{
+  border: 1px solid var(--background-button);
+    cursor: pointer;
+}
+
+.vehicle-lista{
+  background: green;
+}

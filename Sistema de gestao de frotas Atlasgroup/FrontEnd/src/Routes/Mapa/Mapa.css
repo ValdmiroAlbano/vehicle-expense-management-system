@@ -1,0 +1,54 @@
+@import url("leaflet/dist/leaflet.css");
+
+.leaflet-container {
+  height: 520px;
+}
+
+.thread {
+  border-left: 11px;
+}
+
+.table-container-map {
+  height: auto;
+  margin-top: 5rem;
+  overflow: hidden;
+  border: 1px solid rgba(194, 194, 194, 0.199);
+  border-radius: 8px;
+}
+
+#dataTable-map {
+  margin-left: 200px;
+  width: 90%;
+  border-collapse: collapse;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+td,
+tr {
+  text-align: center !important;
+  height: 50px;
+}
+
+.table-container-map i {
+  color: #4d4d4d;
+}
+
+th {
+  background-color: #fafafa;
+  color: #000000;
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}

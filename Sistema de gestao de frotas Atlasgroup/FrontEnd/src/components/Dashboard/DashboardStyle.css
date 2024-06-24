@@ -1,0 +1,288 @@
+
+h1{
+    font-size: var(--text-primary);
+}
+
+/*Dashboard Sidebar*/
+
+:root{
+
+    --body-color: #f3f3f3;
+    --sidebar-color: #0e0125;
+    --primary-color: #ffffff;
+
+    --border-bottom: #c2c2c2;
+
+    --button-background: #000330;
+  
+    --primary-color-light: #070707;
+    --toggle-color: #ddd;
+    --buttom-color: #d0ff00;
+  
+    --text-color: #808080;
+  }
+
+.dashboard-app{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 170px;
+    background: var(--sidebar-color);
+    padding: 15px 15px;
+    transition: 1s all;
+    font-size: 14px;
+  }
+
+  .sidebar header {
+    position: relative;
+  }
+  
+  .sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -12%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background: var(--buttom-color);
+    display: flex;
+    align-items: center;
+    width: 40px;
+    justify-content: center;
+  }
+  
+  .sidebar header .toggle:hover{
+    transition: .5s all;
+    transition-property: all;
+    background:  var(--primary-color);
+  }
+  
+  #navh{
+    color: var(--text-color);
+  }
+  
+  i{
+    color: var(--primary-color);
+    font-size: 18px !important; 
+  }
+
+  .mapa{
+    color: var(--primary-color);
+    font-size: 18px !important; 
+    align-items: left;
+    text-decoration: none;
+    min-width: 45px;
+    margin-left: 0.4rem;
+  }
+  
+  .menu-bar{
+    margin-top: 2rem;
+    height: 400px;
+  }
+
+  .menu-bar::-webkit-scrollbar{
+    width: 8px;
+    background: #131313;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+  .menu-bar::-webkit-scrollbar-thumb:hover{
+    background: #292929;
+    border-radius: 15px;
+  }
+  
+  
+  .sidebar li{
+
+    height: 35px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .sidebar li.active{
+    background: #2797ff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #exit{
+    background: #2797ff;
+    border-radius: 5px;
+  }
+  .sidebar li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+
+  
+  .sidebar li:nth-child(3){
+    border-radius: 5px;
+  }
+  
+  .sidebar li .icon{
+    align-items: left;
+    text-decoration: none;
+    min-width: 35px;
+    margin-left: 1rem;
+  }
+  
+  .sidebar li .icon,
+  .sidebar li .text{
+    font-size: 14px;
+    color: var(--primary-color);
+  }
+  
+  /*HOME*/
+
+  /*Top*/
+  
+  .top-header{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    width: calc(100% - 230px);
+    position: fixed;
+    padding: 15px;
+    color: #000000;
+    background: #FFFFFF;
+    border-bottom: 1px solid #c2c2c22d;
+    left: 200px;
+    z-index: 3;
+  }
+
+  .user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  /*
+  .header-list{
+    background: red;
+  }*/
+
+  .header-list{
+    display: flex;
+    align-items: center;
+  }
+  .header-list span{
+    margin: 10px;
+  }
+
+  .header-list input{
+    padding: 6px;
+  }
+
+  .profile{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  input[type="search"]{
+    background: transparent;
+    padding: 10px;
+    width: 300px !important;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    transition: .4s ease;
+    background-image: url(../../assets/bx-search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+  }
+/*
+  input[type="search"]:focus{
+    width: 300px;
+    padding-left: 50px;
+  }*/
+
+
+  .recover{
+    display: flex;
+  }
+  
+  .top-header i {
+    font-size: 26px !important;
+    cursor: pointer;
+  }
+
+  .image-text{
+    text-align: center;
+  }
+  
+  #gasta{
+    color: rgb(3, 0, 93);
+    font-size: 24px;
+  }
+  
+  #gasta:nth-child(1){
+    background: rgb(228, 228, 228);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+  
+  /*Main Content*/
+  
+  .main-content{
+    height: auto;
+    width: calc(75% -150px);
+    margin-left:200px;
+    padding: 7rem 2rem;
+    color: #01003a;
+  }
+
+  .main-content h2{
+    font-size: 32px;
+  }
+
+
+  /*Icons*/
+
+  .icons{
+    background: #d6abfd8a;
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+  }
+
+  /*Logo exit*/
+
+  .exit{
+    bottom: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .exit button{
+    background: rgb(0, 174, 255);
+    border: 0;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  /**/

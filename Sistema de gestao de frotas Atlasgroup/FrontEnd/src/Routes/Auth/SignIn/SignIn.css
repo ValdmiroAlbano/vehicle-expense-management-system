@@ -1,0 +1,250 @@
+:root{
+  --background-grid-left: #0E0125;
+  --background-grid-text: #ffffff;
+
+  --color-button: #000000;
+  --background-button:  #2798FF;
+  --text-button: 16px;
+  --text: #0E0125;
+}
+
+.logo{
+  text-align: center;
+}
+
+.tags{
+  background:  #ffffff;
+  color: var(--color-button);
+}
+
+
+.grid-columns{
+    display: grid;
+    grid-template-columns: 1fr; 
+    min-height: 100vh;
+}
+
+.card-left{
+    background: var(--background-grid-left);
+    color: var(--background-grid-text);
+    padding: 4rem;
+}
+
+.card-left h1{
+  font-size: 45px;
+}
+
+b{
+  color: var(--background-button);
+}
+
+.card-left p{
+  font-size: 16px;
+  color: #c2c2c2;
+}
+
+/*
+.btn button{
+  margin-top: 15px;
+  background: rgb(39, 152, 255, 0.20);
+  height: 50px;
+  width: 170px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn button:hover{
+  transform: scale(1.1);
+  transition: .1s ease;
+}
+
+.btn img{
+  font-weight: 700;
+  padding-left: 10px;
+}*/
+
+.card-text{
+    line-height: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+.card{
+    margin: 3rem auto;
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 0px;
+    animation: folder 1s alternate;
+    
+  }
+
+  .card h2{
+    font-size: 34px;
+  }
+  
+  /*CARD GROUP INPUTS*/
+
+  .card-group{
+    line-height: 30px;
+    width: fit-content;
+  }
+
+  .card-group{
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .card-group label{
+    font-size: 12px !important;
+  }
+  
+  .card-group input{
+    height: 20px;
+    width: 250px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 0;
+    border-radius: 8px;
+  
+    background: #F3F3F3;
+    color: #000000;
+    font-size: 13px;
+    outline:  0;
+
+    background-image: url(../../../assets/input-icon/input-pass.svg);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding-left: 40px;
+    border: 2px solid transparent;
+  }
+
+  .card-group input:focus{
+    color: #2798FF;
+    background-image: url(../../../assets/input-icon/input-pass-color.svg);
+  }
+
+  .card-group input[type="email"] {
+    background-image: url(../../../assets/input-icon/input-name.svg);
+  }
+
+  .card-group input[type="email"]:focus{
+    background-image: url(../../../assets/input-icon/input-name-color.svg);
+  }
+  
+  
+  .card-group ::placeholder{
+    font-size: 13px;
+  }
+  
+  .card-group p{
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .card-group input:focus{
+    transition: .5s all;
+
+    transition-property: all;
+    border: 2px solid #2798FF;
+  }
+
+/*RECUPERAR A CONTA*/
+
+.recuperar{
+  font-size: 14px;
+  text-align: right;
+  color: var(--text) !important;
+}
+
+/*BOTÃO*/
+
+.buttons{
+    display: block;
+  }
+  
+  
+.buttons button {
+    position: relative;
+    background-color: var(--background-button);
+    border: none;
+    font-size: var(--text-button);
+    color: #ffffff;
+    height: 42px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 100% !important;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.1s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttons button img{
+  padding-left: 0.4rem;
+}
+.buttons button:after {
+    content: "";
+    background: #90aeee;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+
+.buttons button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+fieldset{
+    text-align: center;
+    width: 92%;
+    margin-top: 1rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-width: 1px;
+    font-size: 14px;
+    border-color: #0000002d;
+}
+
+/*BUTTON API*/
+
+.api{
+  display: flex;
+  gap: 15px;
+}
+
+.api button:nth-child(1){
+  background: #000000;
+}
+
+.api button:nth-child(2){
+  background: #000000;
+}
+
+legend{
+  font-size: 9px;
+}
+  
+  @keyframes folder {
+    from{
+      transform: scale(0.1);
+    }
+  }
+  

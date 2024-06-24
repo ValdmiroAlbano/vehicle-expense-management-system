@@ -1,0 +1,56 @@
+:root{
+  
+  --text-body: Roboto;
+  --text-color: #131313;
+
+  /*Tamanho dos textos*/
+
+  --text-a: 16px;
+  --text-m: 16px;
+  --text-b: 64px;
+  
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family:  var(--text-body);
+  overflow-y: scroll;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}  
+
+
+body::-webkit-scrollbar{
+  background: #E9F5FF;
+  border-radius: 50px;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: #2798FF;
+  transition: .7s;
+  border-radius: 50px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.btn-direction{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: right;
+}
+
+.btn-direction button{
+  width: 40px !important;
+  text-align: left !important;
+  height: 40px !important;
+  border-radius: 50px !important;
+}
+
+
+
+

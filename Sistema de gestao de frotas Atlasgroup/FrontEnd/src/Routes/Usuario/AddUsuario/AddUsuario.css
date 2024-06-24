@@ -1,0 +1,335 @@
+.usuario-drop {
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 60;
+  top: 0;
+  transition: 62s;
+  color: var(--background-sidebar);
+  }
+  
+  .veiculo-card-name{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+   /*  margin-bottom: 20px;
+    border-bottom: 1px solid #c2c2c23b; */
+  }
+
+  #close{
+    border-radius: 4px;
+    padding: 3px;
+  }
+
+  #close:hover{
+    background: rgba(240, 240, 240, 0.397);
+    border-radius: 4px;
+    padding: 3px;
+  }
+
+  .usuario-drop-start {
+    border-radius: 8px;
+    margin: 4rem auto;
+    width: 360px;
+    height: 460px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all;
+    animation: slide 0.3s alternate;
+    z-index: 6;
+    padding: 1rem 1.5rem 1rem 2rem;
+    overflow-y: scroll;
+  }
+
+  .usuario-icons-close{
+    font-size: 20px !important;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .usuario-drop-start::-webkit-scrollbar{
+    width: 10px;
+  }
+
+  .usuario-drop-start::-webkit-scrollbar-thumb{
+    background: var(--background-button);
+    border-radius: 50px;
+  }
+
+  /*INPUT*/
+
+
+  .usuario-card-group{
+    width: 100%;
+  }
+
+
+  .usuario-group-select{
+    display: flex;
+    width: 10%;
+    gap:30px;
+    align-items: center;
+  }
+
+  .usuario-group-select input, select{
+    width: 100% !important;
+  }
+
+
+
+  .usuario-card-group select{
+    height: 50px;
+  }
+
+ 
+  
+  .usuario-card-group select,
+  .usuario-card-group input {
+    padding: 0.50rem;
+    width: 84%;
+
+    border: 2px solid #ffffff;
+
+    background: #fafafaa1;
+    color: #000000;
+    font-size: 12px;
+    outline:  0;
+    border-radius: 5px;
+    transition: .5s all;
+  }
+
+  .usuario-card-group input:focus{
+    transition: .5s all;
+
+    transition-property: all;
+    border: 2px solid #2798FF;
+  }
+
+  .usuario-card-group select{
+    height: 46px;
+  }
+
+
+  .usuario-card-group select:focus{
+    transition: .5s all;
+
+    transition-property: all;
+    border: 2px solid #2798FF;
+  }
+  
+  .usuario-card-group input{
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding-left: 45px;
+  }
+
+
+
+  /*INPUTS ICON*/
+
+  .usuario-card-group input[type="text"]{
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding-left: 45px;
+    height: 42px !important;
+    border: 2px solid transparent;
+    margin-bottom: 4px;
+    background-image: url(../../../assets/input-icon/input-name.svg);
+  }
+
+  .usuario-card-group input[type="email"]{
+    background-image: url(../../../assets/input-icon/input-email.svg);
+  }
+
+  .usuario-card-group input[type="password"]{
+    background-image: url(../../../assets/input-icon/input-pass.svg);
+  }
+
+ 
+ /*  INPUTS FOCUS */
+
+  .usuario-card-group input[type="text"]:focus{
+    color: #2798FF;
+    transition: .5s all;
+
+    transition-property: all;
+    border: 2px solid #2798FF;
+    background-image: url(../../../assets/input-icon/input-name-color.svg);
+  }
+
+
+  .usuario-card-group input[type="email"]:focus{
+    background-image: url(../../../assets/input-icon/input-email-color.png);
+  }
+
+  .usuario-card-group input[type="password"]:focus{
+    background-image: url(../../../assets/input-icon/input-pass-color.svg);
+  }
+ 
+
+  
+  .usuario-card-group label {
+    display: block;
+    font-size: 12px !important;
+    font-weight: 700;
+    margin-bottom: 5px !important;
+    color: #000;
+  }
+
+  /*estilização do documentos*/
+
+  .usuario-group-docs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    border-radius: 8px;
+
+    margin-bottom: 1rem;
+
+  }
+
+  .usuario-docs-preview{
+    width: 180px;
+    height: 110px;
+    border-radius: 15px;
+    background: #F3F3F3;
+    border: 1px solid var(--background-button);
+    border-style: dashed;
+  }
+
+  .usuario-docs-up{
+    background: #F3F3F3;
+    color: #6B7280;
+    font-size: 12px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+
+  }
+
+  .docs-upload span{
+    font-size: 12px;
+    
+
+  }
+  
+
+
+  .usuario-card-group input{
+    height: 25px !important;
+  }
+
+  .usuario-card-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+.usuariosbtn{
+    width: 60%;
+    display: flex;
+    float: right;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.usuariosbtn button:nth-child(1){
+    background: #2798ff1a;
+    color: var(--background-button);
+}
+  
+  .labelError {
+    color: #e00909 !important;
+  }
+  
+  @keyframes slide {
+    from {
+      transition: 0.2s all;
+      transform: translate(100px);
+    }
+  }
+  
+  .usuario-card-name {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .usuario-card-name h3 {
+    font-size: 26px;
+  }
+  
+
+
+
+  .usuario-photo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 340px;
+    margin: auto;
+  }
+  
+  .usuario-foto-preview {
+    background: #fafafa;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .usuario-foto-preview i{
+    color: black;
+    font-size: 63px !important;
+  }
+  
+  .usuario-foto-preview img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .upload-button {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .upload-button p{
+    font-size: 10px;
+    text-align: center;
+    color: #adadad;
+  }
+  
+  .usuario-btn-up {
+    background-color: #8babce;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .usuario-btn-up:hover{
+    background: #90aeee;
+  }
+  
+  .usuario-btn-up i {
+    margin-right: 10px;
+  }
+  
+  
